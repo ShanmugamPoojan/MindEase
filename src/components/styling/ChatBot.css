@@ -1,0 +1,158 @@
+.chat-container {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+
+.chat-toggle {
+  width: 100px;
+  height: 100px;
+  background: linear-gradient(135deg, #6A0DAD, #FFA07A);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease-in-out;
+}
+
+.chat-toggle:hover {
+  transform: scale(1.1);
+}
+
+.chat-box {
+  width: 550px;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  display: none;
+  flex-direction: column;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.chat-box.open {
+  display: flex;
+}
+
+.chat-header {
+  background: linear-gradient(135deg, #6A0DAD, #FFA07A);
+  color: white;
+  padding: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.chat-header button {
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.chat-body {
+  height: 500px;
+  /* max-height: 300px; */
+  overflow-y: auto;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+/* Chat Message Bubbles */
+.message {
+  max-width: 75%;
+  padding: 10px;
+  border-radius: 15px;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  word-break: break-word;
+  opacity: 0;
+  animation: fadeIn 0.3s forwards;
+}
+
+/* User Message */
+.user {
+  background: #FFA07A;
+  align-self: flex-end;
+  color: white;
+  border-bottom-right-radius: 2px;
+}
+
+/* Bot Message */
+.bot {
+  background: #D3D3D3;
+  align-self: flex-start;
+  color: black;
+  border-bottom-left-radius: 2px;
+}
+
+/* Chat Footer */
+.chat-footer {
+  display: flex;
+  padding: 10px;
+  border-top: 1px solid #ddd;
+  background: #f9f9f9;
+}
+
+.chat-footer input {
+  flex: 1;
+  padding: 8px;
+  border: none;
+  border-radius: 15px;
+  outline: none;
+  background: #fff;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.chat-footer button {
+  background: #6A0DAD;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 15px;
+  cursor: pointer;
+  margin-left: 8px;
+  transition: background 0.2s ease-in-out;
+}
+
+.chat-footer button:hover {
+  background: #FFA07A;
+}
+
+.chat-toggle img {
+  width: 80px;
+  height: auto;
+  animation: rotate 10s linear infinite; /* Rotation effect */
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+/* Fade-in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(5px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

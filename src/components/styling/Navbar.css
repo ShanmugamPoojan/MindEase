@@ -1,0 +1,94 @@
+/* Navbar.css */
+
+:root {
+  --primary: #6A0DAD;
+  /* Deep Purple */
+  --secondary: #FFA07A;
+  /* Soft Pink */
+  --text-color: white;
+  --hover-bg: rgba(255, 179, 253, 0.2);
+  /* Hover effect */
+  --active-bg: #FF6F61;
+  /* Active link background */
+  --divider-color: rgba(255, 255, 255, 0.2);
+}
+
+
+/* Header section */
+.header {
+  margin: auto;
+  height: 80px;
+  width: 200px;
+  border-radius: 0 0 100px 100px;
+  background-color: var(--primary);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* background-color: var(--primary); */
+  color: var(--primary);
+  padding: 0px 30px;
+}
+
+.logo {
+  margin: auto ;
+  /* background-color: var(--primary); */
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+  font-family: cursive;
+  text-align: center;
+}
+
+.login-button {
+  padding: 10px 20px;
+  background-color: var(--secondary);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.login-button:hover {
+  background-color: var(--active-bg);
+}
+
+/* .nav-container{
+  display: flex;
+} */
+
+.nav-bar {
+  margin: 20px auto;
+  width: fit-content;
+  
+  display: flex;
+  justify-content: center;
+  background-color: var(--primary);
+  border-radius: 40px;
+  padding: 10px 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  /* Add a soft shadow */
+}
+
+.nav-link {
+  text-decoration: none;
+  color: var(--text-color);
+  margin: 0 15px;
+  font-size: 1.2rem;
+  padding: 10px 15px;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  /* Add smooth transitions */
+  border-radius: 8px;
+  /* Subtle rounding for hover effect */
+}
+
+.nav-link:hover {
+  background-color: var(--hover-bg);
+  transform: scale(1.05);
+}
+
+.nav-link.active {
+  background-color: var(--active-bg);
+  color: white;
+  /* Text color changes when active */
+  font-weight: bold;
+}

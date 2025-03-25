@@ -1,0 +1,94 @@
+:root {
+  --primary: #FF6F61;
+  --secondary: #FFA07A;
+}
+
+/* General styling */
+body {
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #f4f4f9;
+}
+
+/* Main content */
+.main-content {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.main-content h1 {
+  font-size: 2.5rem;
+  color: var(--primary);
+}
+
+.main-content p {
+  font-size: 1.2rem;
+  color: var(--primary);
+}
+
+.container {
+  margin: 40px 0;
+  padding: 20px;
+  background-color: #ffcbb794;
+  border-radius: 20px;
+}
+.container> p{
+  font-size: 16px;
+  color: #555;
+}
+.section {
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.section div {
+  width: 400px;
+  height: 250px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 0 0 3px gray;
+  transition: 300ms;
+  cursor: pointer;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.section button{
+  padding: 10px;
+  border-radius: 10px;
+  border: 2px solid #6A0DAD;
+  color: #6A0DAD;
+  font-weight: bold;
+  font-size: medium;
+  background: transparent;
+  background-color: rgba(255, 255, 255, 0.7);
+  transition: 300ms;
+}
+
+.section button:hover{
+  background-color: #6A0DAD;
+  color: white;
+}
+.section div:hover {
+  transform: scale(1.03);
+}
+
+.ai-chat {
+  background-image: url(ai-chat.png);
+  background-position: center;
+  background-size: cover;
+}
+
+.human-chat {
+  background-image: url(human-chat.png);
+  background-position: center;
+  background-size: cover;
+}
