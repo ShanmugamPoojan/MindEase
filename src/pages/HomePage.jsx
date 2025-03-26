@@ -10,7 +10,9 @@ function HomePage() {
     <div className="home-page">
       {/* Main Content */}
       <main className="main-content">
-        <h1>Welcome to the Mental Health Monitoring System</h1>
+        <h1>Welcome to MindEase!</h1>
+        <h2>A safe space for sharing, learning, and fostering mental well-being. Whether you're here to find strategies, stories, or support, this is your companion for navigating the journey to better mental health.</h2>
+        <p>"Talk to yourself like someone you love." – Brené Brown.</p>
         <DailyCheckinCard />
         <div className='container'>
           <h2>Mental health is personal—choose what feels right for you.</h2>
